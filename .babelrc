@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "env", "react", "stage-2"
+  ],
+  "plugins": ["syntax-dynamic-import","transform-runtime"],
+  "comments": false,
+  "env": {
+    "test": {
+      "plugins": [ "istanbul" ]
+    },
+    "production": {
+      "plugins": ["transform-react-constant-elements"]
+    }
+  }
+}
+
